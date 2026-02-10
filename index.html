@@ -9,12 +9,12 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
-  background: #fffff8;
+  background: #fafaf5;
 }
 
 body {
-  background: #fffff8;
-  color: #1a1a2e;
+  background: #fafaf5;
+  color: #111122;
   font-family: 'Press Start 2P', monospace;
   font-size: 9px;
   line-height: 2.2;
@@ -26,7 +26,7 @@ body {
 .page {
   max-width: 780px;
   margin: 0 auto;
-  background: #fffff8;
+  background: #fafaf5;
   border: none;
   box-shadow: none;
   position: relative;
@@ -38,9 +38,9 @@ body {
 .header {
   text-align: center;
   padding: 20px 20px 14px;
-  border-bottom: 4px solid #1a1a2e;
-  background: #1a1a2e;
-  color: #fffff8;
+  border-bottom: 4px solid #0a0a1a;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0e0e20 100%);
+  color: #fafaf5;
 }
 
 .pixel-char {
@@ -68,10 +68,10 @@ body {
 
 .player-name {
   font-size: 20px;
-  color: #ffcc00;
-  text-shadow: 2px 2px 0 #885500;
+  color: #ffd700;
+  text-shadow: 2px 2px 0 #664400, 0 0 8px rgba(255,215,0,0.3);
   margin: 4px 0;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .player-class {
@@ -82,44 +82,46 @@ body {
 
 .contact-bar {
   font-size: 7px;
-  color: #ccccdd;
+  color: #b0b0cc;
   line-height: 2.2;
+  letter-spacing: 0.5px;
 }
 
 /* Profile */
 .profile-bar {
   padding: 12px 18px;
-  background: #f5f4ed;
+  background: #eeeee6;
   border-bottom: 3px solid #1a1a2e;
   font-size: 8px;
-  color: #2a2a3e;
+  color: #222233;
   line-height: 2.2;
 }
 
 /* Sections */
 .section {
   padding: 14px 18px;
-  border-bottom: 3px dashed #ccc8b8;
+  border-bottom: 2px solid #d8d5c8;
 }
 .section:last-child { border-bottom: none; }
 
 .section-title {
   font-size: 11px;
-  color: #cc4400;
+  color: #cc3300;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 8px;
+  letter-spacing: 1px;
 }
 .section-title::before {
   content: '▶';
   font-size: 7px;
-  color: #cc4400;
+  color: #cc3300;
 }
 .section-title .line {
   flex: 1;
   height: 2px;
-  background: repeating-linear-gradient(90deg, #ccc8b8 0, #ccc8b8 4px, transparent 4px, transparent 8px);
+  background: linear-gradient(90deg, #cc3300 0%, #d8d5c8 30%, #d8d5c8 100%);
 }
 
 /* Inventory */
@@ -131,16 +133,18 @@ body {
 .inv-item {
   padding: 10px;
   background: #f0efe8;
-  border: 2px solid #d0cfc8;
+  border: 2px solid #c0bfb5;
   font-size: 8px;
-  color: #333;
+  color: #222;
   line-height: 2.2;
+  box-shadow: 2px 2px 0 #c0bfb5;
 }
 .inv-item .label {
-  color: #cc4400;
+  color: #cc3300;
   display: block;
   margin-bottom: 4px;
   font-size: 8px;
+  letter-spacing: 0.5px;
 }
 
 /* Stat bars */
@@ -153,16 +157,18 @@ body {
 .stat-label {
   width: 160px;
   font-size: 8px;
-  color: #555;
+  color: #333;
   text-align: left;
   flex-shrink: 0;
+  letter-spacing: 0.3px;
 }
 .stat-bar {
   flex: 1;
   height: 12px;
-  background: #e8e7e0;
-  border: 2px solid #aaa8a0;
+  background: #e0dfd8;
+  border: 2px solid #999890;
   overflow: hidden;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1);
 }
 .stat-fill {
   height: 100%;
@@ -187,11 +193,12 @@ body {
 
 .stat-level {
   font-size: 8px;
-  color: #cc4400;
+  color: #cc3300;
   width: 40px;
   text-align: left;
   flex-shrink: 0;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .also-text {
@@ -209,20 +216,22 @@ body {
   margin-bottom: 6px;
   padding: 8px 10px;
   background: #f0efe8;
-  border: 2px solid #d0cfc8;
-  border-left: 4px solid #cc4400;
+  border: 2px solid #c0bfb5;
+  border-left: 4px solid #cc3300;
+  box-shadow: 2px 2px 0 #c0bfb5;
 }
 .achievement-icon { font-size: 18px; flex-shrink: 0; }
 .achievement-info { flex: 1; }
-.achievement-name { font-size: 9px; color: #1a1a2e; margin-bottom: 3px; }
-.achievement-desc { font-size: 8px; color: #555; line-height: 2.2; }
+.achievement-name { font-size: 9px; color: #111122; margin-bottom: 3px; letter-spacing: 0.5px; }
+.achievement-desc { font-size: 8px; color: #444; line-height: 2.2; }
 .achievement-platform {
   font-size: 7px;
-  color: #fff;
-  background: #1a1a2e;
+  color: #fafaf5;
+  background: #111122;
   margin-top: 3px;
   display: inline-block;
-  padding: 1px 5px;
+  padding: 2px 6px;
+  letter-spacing: 0.5px;
 }
 
 /* Quest log */
@@ -230,14 +239,15 @@ body {
   margin-bottom: 10px;
   padding: 10px 12px;
   background: #f0efe8;
-  border: 2px solid #d0cfc8;
-  border-left: 4px solid #0088cc;
+  border: 2px solid #c0bfb5;
+  border-left: 4px solid #0077bb;
+  box-shadow: 2px 2px 0 #c0bfb5;
 }
-.quest-title { font-size: 9px; color: #1a1a2e; margin-bottom: 4px; }
-.quest-subtitle { font-size: 8px; color: #888; margin-bottom: 8px; }
+.quest-title { font-size: 9px; color: #111122; margin-bottom: 4px; letter-spacing: 0.5px; }
+.quest-subtitle { font-size: 8px; color: #777; margin-bottom: 8px; }
 .quest-item {
   font-size: 8px;
-  color: #333;
+  color: #222;
   margin-bottom: 4px;
   padding-left: 16px;
   position: relative;
@@ -247,7 +257,7 @@ body {
   content: '★';
   position: absolute;
   left: 0;
-  color: #cc4400;
+  color: #cc3300;
   font-size: 5px;
   top: 2px;
 }
@@ -257,10 +267,11 @@ body {
   margin-bottom: 6px;
   padding: 10px 12px;
   background: #f0efe8;
-  border: 2px solid #d0cfc8;
+  border: 2px solid #c0bfb5;
+  box-shadow: 2px 2px 0 #c0bfb5;
 }
-.edu-title { font-size: 9px; color: #1a1a2e; margin-bottom: 4px; }
-.edu-sub { font-size: 8px; color: #777; }
+.edu-title { font-size: 9px; color: #111122; margin-bottom: 4px; letter-spacing: 0.5px; }
+.edu-sub { font-size: 8px; color: #666; }
 
 /* Footer */
 .footer {
@@ -268,18 +279,19 @@ body {
   padding: 10px;
   font-size: 7px;
   color: #aaa;
-  border-top: 3px solid #1a1a2e;
-  background: #1a1a2e;
+  border-top: 3px solid #0a0a1a;
+  background: linear-gradient(180deg, #0e0e20 0%, #1a1a2e 100%);
 }
-.footer .main { color: #ffcc00; font-size: 10px; }
-.footer .sub { color: #666; margin-top: 4px; }
+.footer .main { color: #ffd700; font-size: 10px; letter-spacing: 2px; text-shadow: 1px 1px 0 #664400; }
+.footer .sub { color: #555; margin-top: 4px; letter-spacing: 1px; }
 
 /* Print */
 @media print {
-  html, body { padding: 0 !important; margin: 0 !important; background: #fffff8 !important; width: 100% !important; }
-  .page { border: none !important; box-shadow: none !important; max-width: 100% !important; width: 100% !important; margin: 0 !important; padding: 0 !important; background: #fffff8 !important; }
-  .section, .profile-bar, .header, .footer, .achievement, .quest, .edu-item, .inv-item, .inventory-grid { background-color: #fffff8; }
-  .header, .footer { background-color: #1a1a2e !important; }
+  html, body { padding: 0 !important; margin: 0 !important; background: #fafaf5 !important; width: 100% !important; }
+  .page { border: none !important; box-shadow: none !important; max-width: 100% !important; width: 100% !important; margin: 0 !important; padding: 0 !important; background: #fafaf5 !important; }
+  .section, .profile-bar, .achievement, .quest, .edu-item, .inv-item, .inventory-grid { background-color: #fafaf5; }
+  .achievement, .quest, .edu-item, .inv-item { background-color: #f0efe8 !important; }
+  .header, .footer { background: #1a1a2e !important; }
   @page { margin: 0; size: A4; }
   .page-break { page-break-after: always; }
   .quest, .achievement, .edu-item { break-inside: avoid; }
