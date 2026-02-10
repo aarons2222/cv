@@ -280,40 +280,40 @@ body {
   .page { border: none !important; box-shadow: none !important; max-width: 100% !important; width: 100% !important; margin: 0 !important; padding: 0 !important; background: #fffff8 !important; }
   .section, .profile-bar, .header, .footer, .achievement, .quest, .edu-item, .inv-item, .inventory-grid { background-color: #fffff8; }
   .header, .footer { background-color: #1a1a2e !important; }
-  @page { margin: 0; size: letter; }
+  @page { margin: 0; size: A4; }
   .page-break { page-break-after: always; }
   .quest, .achievement, .edu-item { break-inside: avoid; }
-  .page-2 { break-before: page !important; page-break-before: always !important; }
-  body { font-size: 9px; line-height: 2.1; }
-  .profile-bar { padding: 6px 16px; line-height: 1.9; font-size: 8px; }
-  .section { padding: 8px 16px; }
-  .section-title { margin-bottom: 6px; font-size: 10px; }
-  .stat-row { margin-bottom: 2px; }
-  .stat-bar { height: 10px; }
+  /* no forced page break — content flows naturally across 2 pages */
+  body { font-size: 10px; line-height: 2.2; }
+  .profile-bar { padding: 10px 18px; line-height: 2.1; font-size: 9px; }
+  .section { padding: 12px 18px; }
+  .section-title { margin-bottom: 9px; font-size: 11px; }
+  .stat-row { margin-bottom: 4px; }
+  .stat-bar { height: 12px; }
   .stat-label { font-size: 8px; }
   .stat-level { font-size: 8px; }
-  .achievement { margin-bottom: 3px; padding: 5px 8px; }
-  .achievement-icon { font-size: 14px; }
-  .achievement-name { font-size: 8px; }
-  .achievement-desc { line-height: 1.6; font-size: 7px; }
-  .achievement-platform { font-size: 6px; padding: 1px 4px; margin-top: 2px; }
-  .inv-item { padding: 5px; line-height: 1.7; font-size: 7px; }
-  .inv-item .label { font-size: 7px; margin-bottom: 1px; }
-  .inventory-grid { gap: 3px; }
-  .header { padding: 10px 16px 6px; }
-  .player-name { font-size: 18px; }
-  .player-class { font-size: 8px; margin-bottom: 4px; }
-  .contact-bar { font-size: 7px; line-height: 2; }
-  .quest { margin-bottom: 4px; padding: 5px 8px; }
-  .quest-title { font-size: 8px; }
-  .quest-subtitle { font-size: 7px; margin-bottom: 4px; }
-  .quest-item { margin-bottom: 1px; line-height: 1.7; font-size: 7px; }
-  .edu-item { margin-bottom: 3px; padding: 5px 8px; }
-  .edu-title { font-size: 8px; }
-  .edu-sub { font-size: 7px; }
-  .footer { padding: 8px; }
-  .footer .main { font-size: 9px; }
-  .also-text { margin-top: 4px; font-size: 6px; line-height: 1.8; }
+  .achievement { margin-bottom: 5px; padding: 7px 10px; }
+  .achievement-icon { font-size: 16px; }
+  .achievement-name { font-size: 8.5px; }
+  .achievement-desc { line-height: 1.7; font-size: 7.5px; }
+  .achievement-platform { font-size: 6.5px; padding: 1px 5px; margin-top: 2px; }
+  .inv-item { padding: 8px; line-height: 1.9; font-size: 8px; }
+  .inv-item .label { font-size: 8px; margin-bottom: 2px; }
+  .inventory-grid { gap: 5px; }
+  .header { padding: 14px 18px 10px; }
+  .player-name { font-size: 20px; }
+  .player-class { font-size: 9px; margin-bottom: 6px; }
+  .contact-bar { font-size: 8px; line-height: 2.2; }
+  .quest { margin-bottom: 6px; padding: 7px 10px; }
+  .quest-title { font-size: 8.5px; }
+  .quest-subtitle { font-size: 7.5px; margin-bottom: 5px; }
+  .quest-item { margin-bottom: 2px; line-height: 1.8; font-size: 7.5px; }
+  .edu-item { margin-bottom: 5px; padding: 7px 10px; }
+  .edu-title { font-size: 8.5px; }
+  .edu-sub { font-size: 7.5px; }
+  .footer { padding: 12px; }
+  .footer .main { font-size: 9.5px; }
+  .also-text { margin-top: 6px; font-size: 7px; line-height: 2; }
 }
 
 @media (max-width: 600px) {
@@ -422,7 +422,7 @@ body {
     </div>
   </div>
 
-  <div class="section page-2">
+  <div class="section">
     <div class="section-title">QUEST LOG <span class="line"></span></div>
     <div class="quest">
       <div class="quest-title">CONTRACT DEVELOPER — DYNAMIC ACCESS SOLUTIONS</div>
