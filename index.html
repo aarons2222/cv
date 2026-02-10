@@ -284,36 +284,36 @@ body {
   .page-break { page-break-after: always; }
   .quest, .achievement, .edu-item { break-inside: avoid; }
   /* no forced page break — content flows naturally across 2 pages */
-  body { font-size: 10px; line-height: 2.2; }
-  .profile-bar { padding: 10px 18px; line-height: 2.1; font-size: 9px; }
-  .section { padding: 12px 18px; }
-  .section-title { margin-bottom: 9px; font-size: 11px; }
-  .stat-row { margin-bottom: 4px; }
-  .stat-bar { height: 12px; }
+  body { font-size: 9.5px; line-height: 2.1; }
+  .profile-bar { padding: 8px 18px; line-height: 2; font-size: 8.5px; }
+  .section { padding: 10px 18px; }
+  .section-title { margin-bottom: 8px; font-size: 10.5px; }
+  .stat-row { margin-bottom: 3px; }
+  .stat-bar { height: 11px; }
   .stat-label { font-size: 8px; }
   .stat-level { font-size: 8px; }
-  .achievement { margin-bottom: 5px; padding: 7px 10px; }
-  .achievement-icon { font-size: 16px; }
-  .achievement-name { font-size: 8.5px; }
-  .achievement-desc { line-height: 1.7; font-size: 7.5px; }
-  .achievement-platform { font-size: 6.5px; padding: 1px 5px; margin-top: 2px; }
-  .inv-item { padding: 8px; line-height: 1.9; font-size: 8px; }
-  .inv-item .label { font-size: 8px; margin-bottom: 2px; }
-  .inventory-grid { gap: 5px; }
-  .header { padding: 14px 18px 10px; }
-  .player-name { font-size: 20px; }
-  .player-class { font-size: 9px; margin-bottom: 6px; }
-  .contact-bar { font-size: 8px; line-height: 2.2; }
+  .achievement { margin-bottom: 4px; padding: 6px 9px; }
+  .achievement-icon { font-size: 15px; }
+  .achievement-name { font-size: 8px; }
+  .achievement-desc { line-height: 1.6; font-size: 7px; }
+  .achievement-platform { font-size: 6px; padding: 1px 4px; margin-top: 2px; }
+  .inv-item { padding: 6px; line-height: 1.8; font-size: 7.5px; }
+  .inv-item .label { font-size: 7.5px; margin-bottom: 1px; }
+  .inventory-grid { gap: 4px; }
+  .header { padding: 12px 18px 8px; }
+  .player-name { font-size: 19px; }
+  .player-class { font-size: 8.5px; margin-bottom: 5px; }
+  .contact-bar { font-size: 7.5px; line-height: 2; }
   .quest { margin-bottom: 6px; padding: 7px 10px; }
   .quest-title { font-size: 8.5px; }
   .quest-subtitle { font-size: 7.5px; margin-bottom: 5px; }
-  .quest-item { margin-bottom: 2px; line-height: 1.8; font-size: 7.5px; }
+  .quest-item { margin-bottom: 2px; line-height: 1.75; font-size: 7.5px; }
   .edu-item { margin-bottom: 5px; padding: 7px 10px; }
   .edu-title { font-size: 8.5px; }
   .edu-sub { font-size: 7.5px; }
   .footer { padding: 12px; }
   .footer .main { font-size: 9.5px; }
-  .also-text { margin-top: 6px; font-size: 7px; line-height: 2; }
+  .also-text { margin-top: 5px; font-size: 6.5px; line-height: 1.9; }
 }
 
 @media (max-width: 600px) {
@@ -339,7 +339,7 @@ body {
   </div>
 
   <div class="profile-bar">
-    Software developer since 2018 specialising in iOS and Android. Experienced across the full lifecycle: discovery, architecture, implementation, testing, release and support. Strong at integrating third-party SDKs, building reliable API-driven features, and improving app stability and performance.
+    Mobile developer with 7+ years building native iOS and Android apps. From BLE hardware integrations to secure messaging in custodial environments — I've shipped across both stores and built full-stack side projects using React Native, Next.js, and Supabase.
   </div>
 
   <div class="section">
@@ -347,19 +347,19 @@ body {
     <div class="inventory-grid">
       <div class="inv-item">
         <span class="label">📱 SHIPPED APPS</span>
-        7+ years shipping mobile apps with MVVM/Clean architecture.
+        5 published apps across App Store &amp; Google Play. MVVM, Clean Architecture, and Coordinator patterns.
       </div>
       <div class="inv-item">
         <span class="label">⚡ DUAL WIELD</span>
-        Native Swift/SwiftUI + Kotlin/Jetpack, plus React Native.
+        Native Swift/SwiftUI + Kotlin/Jetpack Compose, plus React Native/Expo for cross-platform.
       </div>
       <div class="inv-item">
         <span class="label">🔥 BACKEND SYNC</span>
-        REST/JSON APIs, Firebase Auth/Firestore/Functions/Crashlytics.
+        REST/JSON APIs, Firebase suite, Supabase, WebSockets, and real-time data sync.
       </div>
       <div class="inv-item">
         <span class="label">🚀 RELEASE MASTER</span>
-        CI/CD, App Store/TestFlight, Google Play, monitoring + hotfixes.
+        Full CI/CD pipelines, TestFlight, Google Play Console, crash monitoring &amp; hotfixes.
       </div>
     </div>
   </div>
@@ -384,7 +384,7 @@ body {
       <div class="achievement-icon">🔐</div>
       <div class="achievement-info">
         <div class="achievement-name">eLOQ</div>
-        <div class="achievement-desc">BLE smart key management system — encrypted hardware communication, real-time access logging, multi-site admin. Dynamic Access Solutions.</div>
+        <div class="achievement-desc">BLE smart key management system with AES-128 encrypted hardware communication, real-time access logging, multi-site admin dashboards, and offline-first sync. Dynamic Access Solutions.</div>
         <span class="achievement-platform">iOS & ANDROID</span>
       </div>
     </div>
@@ -392,7 +392,7 @@ body {
       <div class="achievement-icon">💬</div>
       <div class="achievement-info">
         <div class="achievement-name">UNIFY MESSENGER</div>
-        <div class="achievement-desc">Secure messaging platform for the custodial sector. Sensitive communications with compliance requirements. Unify Business Solutions.</div>
+        <div class="achievement-desc">Secure messaging platform for the custodial sector with end-to-end encryption, VoIP calling, push notifications, and strict compliance for sensitive communications. Unify Business Solutions.</div>
         <span class="achievement-platform">iOS & ANDROID</span>
       </div>
     </div>
@@ -400,7 +400,7 @@ body {
       <div class="achievement-icon">📊</div>
       <div class="achievement-info">
         <div class="achievement-name">POWERFUL REPORTS</div>
-        <div class="achievement-desc">Ofsted inspection analytics for early years practitioners. Interactive data visualisation and report generation.</div>
+        <div class="achievement-desc">Ofsted inspection analytics for early years practitioners. Interactive data visualisation, PDF report generation, and trend analysis across multiple settings.</div>
         <span class="achievement-platform">iOS, iPAD & ANDROID</span>
       </div>
     </div>
@@ -408,7 +408,7 @@ body {
       <div class="achievement-icon">📦</div>
       <div class="achievement-info">
         <div class="achievement-name">ORDERNISE</div>
-        <div class="achievement-desc">Sales and inventory management for independent online sellers.</div>
+        <div class="achievement-desc">Sales and inventory management for independent online sellers. Multi-channel order tracking, stock alerts, and analytics dashboard.</div>
         <span class="achievement-platform">iPHONE & iPAD</span>
       </div>
     </div>
@@ -416,7 +416,7 @@ body {
       <div class="achievement-icon">🌀</div>
       <div class="achievement-info">
         <div class="achievement-name">ODDLY ENOUGH</div>
-        <div class="achievement-desc">Weird and bizarre news aggregator powered by an autonomous AI content pipeline.</div>
+        <div class="achievement-desc">Weird news aggregator with autonomous AI content pipeline — 7 agents for sourcing, summarisation, quality auditing, SEO, and social promotion.</div>
         <span class="achievement-platform">iOS & WEB</span>
       </div>
     </div>
@@ -428,6 +428,7 @@ body {
       <div class="quest-title">CONTRACT DEVELOPER — DYNAMIC ACCESS SOLUTIONS</div>
       <div class="quest-subtitle">2025 — Present</div>
       <div class="quest-item">Returned on contract to migrate legacy Java/Objective-C codebase to modern Kotlin/Swift.</div>
+      <div class="quest-item">Reverse-engineering proprietary BLE protocols and building an open replacement SDK.</div>
     </div>
     <div class="quest">
       <div class="quest-title">SOFTWARE DEVELOPER — UNIFY BUSINESS SOLUTIONS</div>
@@ -444,12 +445,14 @@ body {
       <div class="quest-item">Developed iOS and Android apps for BLE smart key programming, reading and access management.</div>
       <div class="quest-item">Integrated manufacturer BLE SDKs with encrypted communication protocols for hardware key interaction.</div>
       <div class="quest-item">Built admin dashboard and key management system handling multi-site deployments.</div>
+      <div class="quest-item">Worked directly with Chinese hardware manufacturers to integrate and debug proprietary BLE SDKs.</div>
     </div>
     <div class="quest">
       <div class="quest-title">FREELANCE / PERSONAL PROJECTS</div>
       <div class="quest-subtitle">Ongoing side quests</div>
-      <div class="quest-item">Built and shipped 3 personal apps to the App Store (Ordernise, Powerful Reports, Oddly Enough).</div>
+      <div class="quest-item">Built and shipped 5 apps to the App Store and Google Play across personal and client projects.</div>
       <div class="quest-item">Full-stack web development using Next.js, React Native/Expo, Vercel, Supabase, and Firebase.</div>
+      <div class="quest-item">Open-source contributor — published Swift packages and built AI-powered automation tools.</div>
     </div>
   </div>
 
@@ -462,6 +465,14 @@ body {
     <div class="edu-item">
       <div class="edu-title">🎓 BTEC LEVEL 3 COMPUTING</div>
       <div class="edu-sub">The Grimsby Institute — 2013 – 2015</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">BONUS STAGE <span class="line"></span></div>
+    <div class="also-text" style="margin-top:0;">
+      <strong style="color:#cc4400;">INTERESTS:</strong> Open-source contributor, AI/automation enthusiast, retro gaming, and building side projects that solve real problems.<br>
+      <strong style="color:#cc4400;">REFERENCES:</strong> Available on request.
     </div>
   </div>
 
