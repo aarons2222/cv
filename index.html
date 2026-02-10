@@ -16,8 +16,8 @@ body {
   background: #fffff8;
   color: #1a1a2e;
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  line-height: 2.4;
+  font-size: 9px;
+  line-height: 2.2;
   padding: 20px;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -67,7 +67,7 @@ body {
 .character { display: inline-block; width: 48px; height: 48px; margin-bottom: 8px; }
 
 .player-name {
-  font-size: 22px;
+  font-size: 20px;
   color: #ffcc00;
   text-shadow: 2px 2px 0 #885500;
   margin: 4px 0;
@@ -81,32 +81,32 @@ body {
 }
 
 .contact-bar {
-  font-size: 8px;
+  font-size: 7px;
   color: #ccccdd;
-  line-height: 2.4;
+  line-height: 2.2;
 }
 
 /* Profile */
 .profile-bar {
-  padding: 14px 20px;
+  padding: 12px 18px;
   background: #f5f4ed;
   border-bottom: 3px solid #1a1a2e;
-  font-size: 9px;
+  font-size: 8px;
   color: #2a2a3e;
-  line-height: 2.4;
+  line-height: 2.2;
 }
 
 /* Sections */
 .section {
-  padding: 16px 20px;
+  padding: 14px 18px;
   border-bottom: 3px dashed #ccc8b8;
 }
 .section:last-child { border-bottom: none; }
 
 .section-title {
-  font-size: 12px;
+  font-size: 11px;
   color: #cc4400;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -206,8 +206,8 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 8px;
-  padding: 10px 12px;
+  margin-bottom: 6px;
+  padding: 8px 10px;
   background: #f0efe8;
   border: 2px solid #d0cfc8;
   border-left: 4px solid #cc4400;
@@ -283,22 +283,37 @@ body {
   @page { margin: 0; size: letter; }
   .page-break { page-break-after: always; }
   .quest, .achievement, .edu-item { break-inside: avoid; }
-  .page-2 { break-before: page; page-break-before: always; }
-  .profile-bar { padding: 10px 18px; line-height: 2.2; font-size: 9px; }
-  .section { padding: 14px 18px; }
-  .section-title { margin-bottom: 10px; }
-  .stat-row { margin-bottom: 4px; }
-  .stat-bar { height: 12px; }
-  .achievement { margin-bottom: 6px; padding: 8px 10px; }
-  .achievement-desc { line-height: 2; font-size: 8px; }
-  .inv-item { padding: 8px; line-height: 2; }
-  .inventory-grid { gap: 6px; }
-  .header { padding: 16px 18px 12px; }
-  .quest { margin-bottom: 8px; padding: 8px 10px; }
-  .quest-item { margin-bottom: 3px; line-height: 2; }
-  .edu-item { margin-bottom: 5px; padding: 8px 10px; }
-  .footer { padding: 10px; }
-  .also-text { margin-top: 8px; }
+  .page-2 { break-before: page !important; page-break-before: always !important; }
+  body { font-size: 9px; line-height: 2.1; }
+  .profile-bar { padding: 6px 16px; line-height: 1.9; font-size: 8px; }
+  .section { padding: 8px 16px; }
+  .section-title { margin-bottom: 6px; font-size: 10px; }
+  .stat-row { margin-bottom: 2px; }
+  .stat-bar { height: 10px; }
+  .stat-label { font-size: 8px; }
+  .stat-level { font-size: 8px; }
+  .achievement { margin-bottom: 3px; padding: 5px 8px; }
+  .achievement-icon { font-size: 14px; }
+  .achievement-name { font-size: 8px; }
+  .achievement-desc { line-height: 1.6; font-size: 7px; }
+  .achievement-platform { font-size: 6px; padding: 1px 4px; margin-top: 2px; }
+  .inv-item { padding: 5px; line-height: 1.7; font-size: 7px; }
+  .inv-item .label { font-size: 7px; margin-bottom: 1px; }
+  .inventory-grid { gap: 3px; }
+  .header { padding: 10px 16px 6px; }
+  .player-name { font-size: 18px; }
+  .player-class { font-size: 8px; margin-bottom: 4px; }
+  .contact-bar { font-size: 7px; line-height: 2; }
+  .quest { margin-bottom: 4px; padding: 5px 8px; }
+  .quest-title { font-size: 8px; }
+  .quest-subtitle { font-size: 7px; margin-bottom: 4px; }
+  .quest-item { margin-bottom: 1px; line-height: 1.7; font-size: 7px; }
+  .edu-item { margin-bottom: 3px; padding: 5px 8px; }
+  .edu-title { font-size: 8px; }
+  .edu-sub { font-size: 7px; }
+  .footer { padding: 8px; }
+  .footer .main { font-size: 9px; }
+  .also-text { margin-top: 4px; font-size: 6px; line-height: 1.8; }
 }
 
 @media (max-width: 600px) {
@@ -407,8 +422,7 @@ body {
     </div>
   </div>
 
-  <div style="page-break-after: always; break-after: page;"></div>
-  <div class="section">
+  <div class="section page-2">
     <div class="section-title">QUEST LOG <span class="line"></span></div>
     <div class="quest">
       <div class="quest-title">CONTRACT DEVELOPER — DYNAMIC ACCESS SOLUTIONS</div>
